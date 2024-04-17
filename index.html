@@ -1,0 +1,1225 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>MobRei Presale Internal Limited</title>
+  <meta name="description" content="one and only one: 茂靈婚禮茶會內部限定預購 - 歡迎光臨，這裡是茂靈絕美愛情見證婚禮茶會！準備好了嗎？Let's go!">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="./data/logo/logo_colourful_mr_wedding.svg"
+    type="image/x-icon">
+    
+  <link rel="apple-touch-icon"
+    href="./data/logo/logo_colourful_mr_wedding.svg">
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://cdn.com/" crossorigin="">
+  <link rel="preconnect" href="https://com/" crossorigin="">
+ <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
+ <script>
+
+  window.onload = (event) => {
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    var isInApp =(ua.indexOf("FB_IAB") > -1) || (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1) || (ua.toLowerCase().indexOf("line") > -1) || (ua.toLowerCase().indexOf("instagram") > -1);
+    if(isInApp){
+      alert("建議用瀏覽器(Safari/Chrome ...etc)填寫喔！");
+      var url = "https://mobrei-wedding.github.io/mobrei-wedding";
+      window.open(url, "_system");
+    }
+
+};
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HRY7841NFE');
+    window.onerror = function (msg, url, lineNo, columnNo, error) {
+      var string = msg.toLowerCase();
+      var substring = 'script error';
+
+      // ignore script error
+      if (string.indexOf(substring) == -1) {
+        url = url && url.split('/').pop()
+        var value = [
+          'URL: ' + url,
+          'Line: ' + lineNo,
+          'Column: ' + columnNo,
+          'Error object: ' + JSON.stringify(error)
+        ].join(' - ');
+
+        if (window.gtag) {
+          window.gtag('event', 'exception', {
+            description: msg,
+            event_value: value
+          });
+        }
+
+      }
+
+      return false;
+    };
+    // declare variable
+    var bill_col_data = ['項目', '單價', '數量', '總價'];
+    var bill_table_data = [];
+    var pdfDocument = "";
+
+    var product_data ={
+    "1406572988": {
+        "type": "normal-product",
+        "title": "一且唯一雙面PU布御守",
+        "size": "4.5x6.5cm，正負差5mm，繩子36cm", 
+        "material": "PU皮、御守結",
+        "price": 120,
+        "quantity": 0,
+        "picture": "data/picture/御守.png",
+        "product_id": "1406572988",
+        "quantity_id": "entry.918817329"
+    },
+    "259046852": {
+        "type": "normal-product",
+        "title": "蜜月帶著走杯套",
+        "size": "上寬13cm，下寬11cm，高9cm，手提高16cm", 
+        "material": "12安帆布，滿版彩印，背面附吸管束套",
+        "price": 150,
+        "quantity": 0,
+        "picture": "data/picture/杯套.png",
+        "product_id": "259046852",
+        "quantity_id": "entry.1230811956"
+        
+    },
+    "304960959": {
+        "type": "normal-product",
+        "title": "幸福99帆布手提袋",
+        "size": "袋體20x25x9cm，提袋高19cm", 
+        "material": "12安米色帆布，附內袋、金屬釦",
+        "price": 200,
+        "quantity": 0,
+        "picture": "data/picture/托特袋.png",
+        "product_id": "304960959",
+        "quantity_id": "entry.1122819681"
+        
+    },
+    "2051996369": {
+        "type": "normal-product",
+        "title": "師弟旅行到處貼貼",
+        "price": 60,
+        "material": "亮膜半斷貼紙",
+        "size": "14.8x10.5cm", 
+        "quantity": 0,
+        "picture": "data/picture/貼紙.png",
+        "product_id": "2051996369",
+        "quantity_id": "entry.1946631460"
+        
+    },
+    "1706597056": {
+        "type": "limited-product",
+        "title": "壓克力立繪",
+        "price": 450,
+        "material": "壓克力/單面彩印，局部白墨",
+        "size": "本體 15cmx10cm，底座 8cmx6.5cm", 
+        "quantity": 0,
+        "picture": "data/picture/立繪.png",
+        "product_id": "1706597056",
+        "quantity_id": "entry.1036346855"
+        
+    },
+    "901430140": {
+        "type": "limited-product",
+        "title": "透明書籤",
+        "material": "單面彩印，局部白墨",
+        "size": "10.5cmx14.8cm", 
+        "price": 100,
+        "quantity": 0,
+        "picture": "data/picture/書籤.png",
+        "product_id": "901430140",
+        "quantity_id": "entry.1797326934"
+        
+    },
+    "1121831062": {
+        "type": "limited-product",
+        "title": "包在我身上方案",
+        "material": "",
+        "size": "", 
+        "price": 1010,
+        "quantity": 0,
+        "picture": "data/picture/喜帖.jpeg",
+        "product_id": "1121831062",
+        "quantity_id": "entry.347979567"
+        }
+    };
+
+    var draft = {
+      "entry": {
+      }
+    }
+
+    var shoppingCart = [];
+
+
+  </script>
+
+  <link rel="stylesheet" id="/css/output.min.css" href="./css/output.min.css">
+</head>
+
+
+<body class="font">
+  <div class="page-wrapper">
+    <section id="pageform" class="noUi-background"
+      style=" background-size:contain; background-position:center top;background-repeat:no-repeat;">
+      <div class="container padding-top-2x">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-xl-12 col-lg-10" style="padding-top:10px" id="ff-compose">
+            <form dir="ltr" id="Publish1FAIpQLSdfsLWjzLUKRZRxsUbiJNuverhidV76_VuR3GK2YFr_pkxiNw"
+              class="ff-form ff-layout-2column ff-public-mode ff-text-left" method="POST"
+              
+              action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScONqaaqZ8f99R8Va6UbskSzrwNKIQwael4ThC0aTEYPA61Ag/formResponse">
+              <input type="hidden" name="id" value="1FAIpQLSdfsLWjzLUKRZRxsUbiJNuverhidV76_VuR3GK2YFr_pkxiNw">
+              <input type="hidden" name="pageHistory" value="">
+
+              <div class="ff-section" id="ff-sec-root" style="display:block;">
+
+                <img src="./data/logo/title_blonde.svg" class="ff-title-image">
+                <!-- <h3 class="ff-title" id="ff-title-root">
+                  one and only one: 茂靈婚禮茶會報名
+
+                </h3> -->
+
+                <div class="ff-description mdViewer" id="ff-desc-root">
+                 
+                  <p><br></p>
+                  <div class="ff-title-introduction">
+                    <p> 此為茶會內部合作人員限定預購表單，僅限合作繪師、合作文手、普通工作人員以及Coser ST可填寫</p>
+                    <p> 寄送時間：預計將於2023/01/20<span style="color:red;">活動結束後</span>寄送</p>
+                  </div>
+                 
+                </div>
+                <!-- <p class="ff-title-description">歡迎光臨，這裡是茂靈絕美愛情見證婚禮茶會！準備好了嗎？Let's go!</p> -->
+                <div class="ff-secfields">
+                  <div class="rest-form-group ff-item   ff-section_header ff-full-width  ff-item-noprd"
+                    id="ff-id-1634395822">
+                    <h4 class="ff-section-header" id="ff-title-1634395822">
+                      基本資訊
+
+                    </h4>
+
+                  </div>
+
+                 <!--暱稱-->
+                  <div class="rest-form-group ff-item   ff-text ff-part-width  ff-item-noprd" id="ff-id-1439048663">
+
+                    <label class="ff-item-qs " for="Widget1439048663">
+
+                      暱稱
+
+                      <span class="ff-required">*</span>
+
+
+                    </label>
+
+
+                    <small id="Static1439048663" class="ff-help form-text mdViewer">
+                      <p>您的筆名/繪名/圈名/參與此次茶會合作時用的暱稱</p>
+                    </small>
+
+
+
+                    <input type="text" class="ff-widget-control rest-form-control" id="Widget1439048663"
+                      name="entry.1068526554" autocomplete="name" autocorrect="off" spellcheck="false" value=""
+                      placeholder="" required="">
+
+
+                    <div id="Error1439048663" class="ff-widget-error"></div>
+                  </div>
+
+                  <!--Email-->
+                  <div class="rest-form-group ff-item   ff-text ff-part-width  ff-item-noprd" id="ff-id-658159440">
+
+                    <label class="ff-item-qs " for="Widget658159440">
+
+                      Email
+
+                      <span class="ff-required">*</span>
+
+                    </label>
+                    <small id="Static658159440" class="ff-help form-text mdViewer">
+                      <p>寄送訂購明細通知，請再三確認是否正確</p>
+                    </small>
+
+                    <input type="text" class="ff-widget-control rest-form-control" id="Widget658159440"
+                      name="entry.883070371" autocomplete="email" autocorrect="off" spellcheck="false" value=""
+                      placeholder="" required="">
+
+
+                    <div id="Error658159440" class="ff-widget-error"></div>
+                  </div>
+
+                  
+                   <!-- 寄件真名 -->
+                   <div class="rest-form-group ff-item   ff-text ff-part-width  ff-item-noprd" id="ff-id-1157282841">
+
+                    <label class="ff-item-qs " for="Widget1157282841">
+
+                      收件姓名
+
+                      <span class="ff-required">*</span>
+
+                    </label>
+
+
+                    <small id="Static1157282841" class="ff-help form-text mdViewer">
+                      <p>海外郵寄的收件人/賣貨便的下單人（用於核對）</p>
+                    </small>
+
+
+
+
+
+
+
+                    <input type="text" class="ff-widget-control rest-form-control" id="Widget1157282841"
+                      name="entry.1107989229" autocomplete="tel" autocorrect="off" spellcheck="false" value=""
+                      placeholder="" required="">
+
+
+                    <div id="Error1157282841" class="ff-widget-error"></div>
+                  </div>
+
+                              <!-- Reminder: Wedding guest-->
+                  <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd"
+                    id="ff-id-964519823">
+
+                    <label class="ff-item-qs " for="Widget964519823">
+
+                      若已確定是婚禮當天來賓，卻因為報名填得太急促沒能購買周邊，可以直接聯繫主辦喔！
+
+                      <span class="ff-required">*</span>
+
+
+
+                    </label>
+
+                    <small id="Static964519823" class="ff-help-empty ff-help form-text mdViewer"></small>
+
+
+
+                    <div class="ff-widget-control ff-check-table ">
+
+
+                      <div class="ff-form-check">
+                        <input class="ff-form-check-input" type="radio" name="entry.1286001326"
+                          id="entry.1286001326.知道了！"
+                          onclick="entr=1286001326; if(draft.entry[entr]==this.value){ delete draft.entry[entr]; this.checked=false; saveDraft(); }"
+                          value="知道了！" required="">
+                        <label class="ff-form-check-label" for="entry.1286001326.知道了！">
+                          知道了！
+                        </label>
+                      </div>
+
+
+                    </div>
+
+
+
+                    <div id="Error964519823" class="ff-widget-error"></div>
+                  </div>
+
+               
+                
+                  <!-- Internal Only-->
+                  <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd"
+                    id="ff-id-929329530">
+
+                    <label class="ff-item-qs " for="Widget929329530">
+
+                      此為針對內部合作人員的販賣，有包含限定周邊，不可以外流喔>_<
+
+                      <span class="ff-required">*</span>
+
+                    </label>
+
+
+                    <small id="Static929329530" class="ff-help form-text mdViewer">
+                      <!-- <p>此費用包含場地、設備租借、棚費、來賓禮（來賓明信片印製、客製餅乾、飲料、場刊文集、場刊畫冊、喜帖、新人小卡）...等</p>
+                      <i>1125好熟悉的數字......這不就是......!</i> -->
+                    </small>
+
+                    <div class="ff-widget-control ff-check-table ">
+
+
+                      <div class="ff-form-check" >
+                        <input class="ff-form-check-input" type="radio" name="entry.1841292804" required
+                          id="entry.1841292804.沒問題！"
+                          onclick="entr=1841292804; if(draft.entry[entr]==this.value){ delete draft.entry[entr]; this.checked=false; saveDraft(); }"
+                          value="沒問題！">
+                        <label class="ff-form-check-label" for="entry.1841292804.沒問題！">
+                          沒問題！
+                        </label>
+                      </div>
+
+
+                    </div>
+
+
+
+                    <div id="Error929329530" class="ff-widget-error"></div>
+                  </div>
+
+                
+            
+                  <!-- 周邊商品區域-->
+                  <div class="rest-form-group ff-item   ff-section_header ff-full-width  ff-item-noprd"
+                    id="ff-id-1624480621">
+                    <h4 class="ff-section-header" id="ff-title-1624480621">
+                      周邊商品
+
+                    </h4>
+
+                    <div class="ff-description mdViewer" id="ff-desc-1624480621">
+                      <p>由小魚老師及用用老師精心繪製，<a href="https://www.plurk.com/p/pf53bf" target="_blank">詳細大圖資訊可點此連結</a></p>
+                    </div>
+
+                  </div>
+                
+                  <div class="rest-form-group ff-item   ff-list ff-part-width  ff-item-prd" id="ff-id-1406572988"
+                    onclick="showProduct(1406572988)">
+
+                    <label onclick="showProduct(1406572988)" class="ff-item-qs " for="Widget1406572988">
+
+                      一且唯一雙面布御守
+
+
+
+                    </label>
+
+                    <small onclick="showProduct(1406572988)" id="Price1406572988"
+                      class="ff-price ff-help form-text">
+
+
+                      NT$120.00
+
+
+                    </small>
+
+
+
+                    <img
+                      src="data/picture/御守.png"
+                      alt="御守" onclick="showProduct(1406572988)"
+                      class="ff-title-image ff-image ff-image-found">
+
+
+
+                    <div onclick="showProduct(1406572988)" class="ff-add-cart">
+                      <!-- Shopping cart SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                          d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM280-280q-45 0-69-39.5t-1-78.5l54-98-144-304H40v-80h131l170 360h281l155-280 70 38-155 280q-11 20-29 31t-41 11H324l-44 80h480v80H280Z">
+                        </path>
+                      </svg>
+                    </div>
+
+
+
+                    <div id="Error1406572988" class="ff-widget-error"></div>
+                  </div>
+
+                  <div class="rest-form-group ff-item   ff-list ff-part-width  ff-item-prd" id="ff-id-259046852"
+                    onclick="showProduct(259046852)">
+
+                    <label onclick="showProduct(259046852)" class="ff-item-qs " for="Widget259046852">
+
+                      蜜月帶著走杯套
+
+
+
+
+
+
+
+                    </label>
+
+                    <small onclick="showProduct(259046852)" id="Price259046852"
+                      class="ff-price ff-help form-text">
+
+
+                      NT$150.00
+
+
+                    </small>
+
+
+
+                    <img
+                      src="data/picture/杯套.png"
+                      alt="飲料杯帶" onclick="showProduct(259046852)"
+                      class="ff-title-image ff-image ff-image-found">
+
+
+
+
+
+
+                    <div onclick="showProduct(259046852)" class="ff-add-cart">
+                      <!-- Shopping cart SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                          d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM280-280q-45 0-69-39.5t-1-78.5l54-98-144-304H40v-80h131l170 360h281l155-280 70 38-155 280q-11 20-29 31t-41 11H324l-44 80h480v80H280Z">
+                        </path>
+                      </svg>
+                    </div>
+
+
+
+                    <div id="Error259046852" class="ff-widget-error"></div>
+                  </div>
+
+                  <div class="rest-form-group ff-item   ff-list ff-part-width  ff-item-prd" id="ff-id-304960959"
+                    onclick="showProduct(304960959)">
+
+                    <label onclick="showProduct(304960959)" class="ff-item-qs " for="Widget304960959">
+
+                      幸福99手提袋
+
+
+
+
+
+
+                    </label>
+
+                    <small onclick="showProduct(304960959)" id="Price304960959"
+                      class="ff-price ff-help form-text">
+
+
+                      NT$200.00
+
+
+                    </small>
+
+
+
+                    <img
+                      src="data/picture/托特袋.png"
+                      alt="b5托特袋" onclick="showProduct(304960959)"
+                      class="ff-title-image ff-image ff-image-found">
+
+
+                    <div onclick="showProduct(304960959)" class="ff-add-cart">
+                      <!-- Shopping cart SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                          d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM280-280q-45 0-69-39.5t-1-78.5l54-98-144-304H40v-80h131l170 360h281l155-280 70 38-155 280q-11 20-29 31t-41 11H324l-44 80h480v80H280Z">
+                        </path>
+                      </svg>
+                    </div>
+
+
+
+                    <div id="Error304960959" class="ff-widget-error"></div>
+                  </div>
+
+                  <div class="rest-form-group ff-item   ff-list ff-part-width  ff-item-prd" id="ff-id-2051996369"
+                    onclick="showProduct(2051996369)">
+
+                    <label onclick="showProduct(2051996369)" class="ff-item-qs " for="Widget2051996369">
+
+                      師弟旅行到處貼貼
+
+
+
+
+
+
+                    </label>
+
+                    <small onclick="showProduct(2051996369)" id="Price2051996369"
+                      class="ff-price ff-help form-text">
+
+
+                      NT$60.00
+
+
+                    </small>
+
+
+
+                    <img
+                      src="data/picture/貼紙.png"
+                      alt="貼紙" onclick="showProduct(2051996369)"
+                      class="ff-title-image ff-image ff-image-found">
+
+
+
+
+                    <div onclick="showProduct(2051996369)" class="ff-add-cart">
+                      <!-- Shopping cart SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                          d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM280-280q-45 0-69-39.5t-1-78.5l54-98-144-304H40v-80h131l170 360h281l155-280 70 38-155 280q-11 20-29 31t-41 11H324l-44 80h480v80H280Z">
+                        </path>
+                      </svg>
+                    </div>
+
+
+
+                    <div id="Error2051996369" class="ff-widget-error"></div>
+                  </div>
+
+
+
+
+                  <div class="rest-form-group ff-item   ff-section_header ff-full-width  ff-item-noprd"
+                    id="ff-id-1765565911">
+                    <h4 class="ff-section-header" id="ff-title-1765565911">
+                      場內限定
+
+                    </h4>
+
+                    <div class="ff-description mdViewer">
+                      <p>
+                        もちぬ老師所繪製的主視覺設計，<a href="https://www.plurk.com/p/pfih1j" target="_blank">詳細大圖資訊可點此連結</a>
+                      </p>
+                    </div>
+
+                  </div>
+
+
+                  <div class="rest-form-group ff-item   ff-list ff-part-width  ff-item-prd" id="ff-id-1706597056"
+                    onclick="showProduct(1706597056)">
+
+                    <label onclick="showProduct(1706597056)" class="ff-item-qs " for="Widget1706597056">
+
+                      壓克力立繪
+
+
+
+
+
+
+
+                    </label>
+
+                    <small onclick="showProduct(1706597056)" id="Price1706597056"
+                      class="ff-price ff-help form-text">
+
+
+                      NT$450.00
+
+
+                    </small>
+
+
+
+                    <img
+                      src="data/picture/立繪.png"
+                      alt="壓克力立繪" onclick="showProduct(1706597056)"
+                      class="ff-title-image ff-image ff-image-found">
+
+
+
+                    <div onclick="showProduct(1706597056)" class="ff-add-cart">
+                      <!-- Shopping cart SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                          d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM280-280q-45 0-69-39.5t-1-78.5l54-98-144-304H40v-80h131l170 360h281l155-280 70 38-155 280q-11 20-29 31t-41 11H324l-44 80h480v80H280Z">
+                        </path>
+                      </svg>
+                    </div>
+
+
+
+                    <div id="Error1706597056" class="ff-widget-error"></div>
+                  </div>
+
+                  <div class="rest-form-group ff-item   ff-list ff-part-width  ff-item-prd" id="ff-id-901430140"
+                    onclick="showProduct(901430140)">
+
+                    <label onclick="showProduct(901430140)" class="ff-item-qs " for="Widget901430140">
+
+                      透明書籤
+
+
+
+                    </label>
+
+                    <small onclick="showProduct(901430140)" id="Price901430140"
+                      class="ff-price ff-help form-text">
+
+
+                      NT$100.00
+
+
+                    </small>
+
+
+
+                    <img
+                      src="data/picture/書籤.png"
+                      alt="透明書籤" onclick="showProduct(901430140)"
+                      class="ff-title-image ff-image ff-image-found">
+
+
+
+                    <div onclick="showProduct(901430140)" class="ff-add-cart">
+                      <!-- Shopping cart SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                          d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM280-280q-45 0-69-39.5t-1-78.5l54-98-144-304H40v-80h131l170 360h281l155-280 70 38-155 280q-11 20-29 31t-41 11H324l-44 80h480v80H280Z">
+                        </path>
+                      </svg>
+                    </div>
+
+
+
+                    <div id="Error901430140" class="ff-widget-error"></div>
+                  </div>
+
+
+
+
+                  <div class="rest-form-group ff-item   ff-section_header ff-full-width  ff-item-noprd"
+                    id="ff-id-985712023">
+                    <h4 class="ff-section-header" id="ff-title-985712023">
+                      包在我身上方案
+                    </h4>
+
+                    <div class="ff-description mdViewer" id="ff-desc-985712023">
+                      <p>想要一次全包嗎？沒問題！！！這個大禮包就包在我們身上了！</p>
+                      <p><br></p>
+                      <p>此項目包含主視覺限定書籤、壓克力立繪、杯套、袋子、貼紙、及御守。</p>
+                    </div>
+
+                  </div>
+
+
+                  <div class="rest-form-group ff-item   ff-list ff-part-width  ff-item-prd" id="ff-id-1121831062"
+                    onclick="showProduct(1121831062)">
+
+                    <label onclick="showProduct(1121831062)" class="ff-item-qs " for="Widget1121831062">
+
+                      
+                      茂靈婚禮紀念大禮包
+
+
+                    </label>
+
+                    <small onclick="showProduct(1121831062)" id="Price1121831062"
+                      class="ff-price ff-help form-text">
+
+
+                      NT$1010
+
+
+                    </small>
+
+                    
+
+                    <img
+                      src="data/picture/大禮包.png"
+                      alt="茂靈婚禮紀念大禮包" onclick="showProduct(1121831062)"
+                      class="ff-title-image ff-image ff-image-found">
+
+
+
+
+
+                    <div onclick="showProduct(1121831062)" class="ff-add-cart">
+                      <!-- Shopping cart SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                          d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM280-280q-45 0-69-39.5t-1-78.5l54-98-144-304H40v-80h131l170 360h281l155-280 70 38-155 280q-11 20-29 31t-41 11H324l-44 80h480v80H280Z">
+                        </path>
+                      </svg>
+                    </div>
+                    <div id="Error1121831062" class="ff-widget-error"></div>
+                  </div>
+
+
+
+
+                  <div class="rest-form-group ff-item   ff-section_header ff-full-width  ff-item-noprd"
+                    id="ff-id-884719476">
+                    <h4 class="ff-section-header" id="ff-title-884719476">
+                      價錢清單
+
+                    </h4>
+
+                  </div>
+
+
+                  <div class="rest-form-group ff-item   ff-text ff-part-width  ff-item-noprd" id="ff-id-2046362136">
+                    <label class="ff-item-qs " for="Widget2046362136">
+                      周邊總價
+
+
+
+
+
+
+
+                    </label>
+
+                    <small id="Static2046362136" class="ff-help-empty ff-help form-text mdViewer"></small>
+
+
+                    <input type="text" class="ff-widget-control ff-readonly rest-form-control" id="Display2046362136"
+                      value="0" readonly="">
+                    <input type="hidden" id="Widget2046362136" name="entry.575052231" value="0">
+
+                    <div id="Error2046362136" class="ff-widget-error"></div>
+                  </div>
+
+                  <div class="rest-form-group ff-item   ff-text ff-part-width  ff-item-noprd" id="ff-id-2139224654">
+                    <label class="ff-item-qs " for="Widget2139224654">
+
+                      購買數量
+
+                    </label>
+
+                    <small id="Static2139224654" class="ff-help-empty ff-help form-text mdViewer"></small>
+
+                    <input type="text" class="ff-widget-control ff-readonly rest-form-control" id="Display2139224654"
+                      value="0" readonly="">
+                    <input type="hidden" id="Widget2139224654" name="entry.253014823" value="0">
+
+
+
+                    <div id="Error2139224654" class="ff-widget-error"></div>
+                  </div>
+
+                  <!-- <div class="rest-form-group ff-item   ff-text ff-full-width  ff-item-noprd" id="ff-id-855092565">
+                      <label class="ff-item-qs " for="Widget855092565">
+                        茶會報名費
+                      </label>
+                      <small id="Static855092565" class="ff-help-empty ff-help form-text mdViewer"></small>
+                      <input type="text" class="ff-widget-control ff-readonly rest-form-control" id="Display855092565"
+                        value="1125" readonly="">
+                      <input type="hidden" id="Widget855092565" name="entry.1423911485" value="1125">
+
+                    <div id="Error855092565" class="ff-widget-error"></div>
+                  </div> -->
+
+                  <!-- <div class="rest-form-group ff-item   ff-text ff-full-width  ff-item-noprd" id="ff-id-1588677463">
+                    <label class="ff-item-qs " for="Widget1588677463">
+                      最終價格
+                    </label>
+
+                    <small id="Static1588677463" class="ff-help-empty ff-help form-text mdViewer"></small>
+                    <input type="text" class="ff-widget-control ff-readonly rest-form-control" id="Display1588677463"
+                      value="0" readonly="">
+                    <input type="hidden" id="Widget1588677463" name="entry.1725694623" value="4991">
+
+                    <div id="Error1588677463" class="ff-widget-error"></div>
+                  </div>
+ -->
+
+
+
+                  <div class="rest-form-group ff-item   ff-section_header ff-full-width  ff-item-noprd"
+                    id="ff-id-1959728480">
+                    <h4 class="ff-section-header" id="ff-title-1959728480">
+                      請再次確認預購細項與最終金額
+
+                    </h4>
+
+                    <div class="ff-description mdViewer" id="ff-desc-1959728480">
+                      <p>挖哭挖哭，確認完畢後就可以進到最後階段囉！</p>
+                      <p><br></p>
+                      <p></p>
+                      <table id="bill-table-1959728480" class="ff-bill ff-email">
+                        <table class="ff-bill ff-email">
+                         
+                      </table>
+
+                      </table>
+                      <p></p>
+                    </div>
+
+                  </div>
+
+
+
+
+                </div>
+                <!-- <button type="button" id="submit" class="button-primary u-full-width">確認送出</button> -->
+                <div class="ff-button-bar">
+
+                 
+                  <button type="button" class="rest-btn rest-btn-lg rest-btn-primary ff-next" id="ff-next-root"
+                    onclick="gotoSection(this.form, 'root', '')">
+
+                    <span>Next</span>
+                    <!-- arrow forward SVG -->
+                    <img src="./data/icon/right.svg" class="material-icons">
+
+                  </button>
+                </div>
+              </div>
+
+
+
+             
+              <div class="ff-section" id="ff-sec-1194002809" style="display:none;">
+                <h3 class="ff-title" id="ff-title-1194002809">
+                  相關注意事項
+
+                </h3>
+
+                <div class="ff-secfields">
+                   <!-- Order Platform-->
+                  <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd"
+                    id="ff-id-218713257">
+
+                    <label class="ff-item-qs " for="Widget218713257">
+
+                      若您人在台灣會開<b>賣貨便</b>，若人在海外會<b>海外郵寄</b>，屆時以信件通知為主，聊天室通知為輔，再請您到時留意信箱了
+
+                      <span class="ff-required">*</span>
+
+
+
+                    </label>
+
+                    <small id="Static218713257" class="ff-help-empty ff-help form-text mdViewer"></small>
+
+
+                    <div class="ff-widget-control ff-check-table ">
+
+
+                      <div class="ff-form-check">
+                        <input class="ff-form-check-input" type="radio" name="entry.18356239"
+                          id="entry.18356239.好的"
+                          onclick="entr=18356239; if(draft.entry[entr]==this.value){ delete draft.entry[entr]; this.checked=false; saveDraft(); }"
+                          value="好的" required="">
+                        <label class="ff-form-check-label" for="entry.18356239.好的">
+                          好的
+                        </label>
+                      </div>
+
+
+
+        
+
+                    </div>
+
+
+
+                    <div id="Error218713257" class="ff-widget-error"></div>
+                  </div>
+
+      
+                  <div class="rest-form-group ff-item   ff-multiple_choice ff-full-width  ff-item-noprd"
+                    id="ff-id-1666827740">
+
+                    <label class="ff-item-qs " for="Widget1666827740">
+
+                      以上資訊閱讀完畢
+
+                      <span class="ff-required">*</span>
+
+
+                    </label>
+
+                    <small id="Static1666827740" class="ff-help-empty ff-help form-text mdViewer"></small>
+
+
+                    <div class="ff-widget-control ff-check-table ">
+
+
+                      <div class="ff-form-check">
+                        <input class="ff-form-check-input" type="radio" name="entry.1160286542"
+                          id="entry.1160286542.OFC，聰明絕頂的我"
+                          onclick="entr=1160286542; if(draft.entry[entr]==this.value){ delete draft.entry[entr]; this.checked=false; saveDraft(); }"
+                          value="OFC，聰明絕頂的我" required="">
+                        <label class="ff-form-check-label" for="entry.1160286542.OFC，聰明絕頂的我">
+                          OFC，聰明絕頂的我
+                        </label>
+                      </div>
+
+
+                    </div>
+
+
+
+                    <div id="Error1666827740" class="ff-widget-error"></div>
+                  </div>
+
+
+                <!--  祝福 -->
+                <div class="rest-form-group ff-item   ff-paragraph_text ff-full-width  ff-item-noprd"
+                id="ff-id-780521456">
+
+                <label class="ff-item-qs " for="Widget780521456">
+
+                  感謝您參與茶會合作，這段時間辛苦了。不知有什麼話想送給這場婚禮嗎？可以是給茂靈兩位新人的祝福、或者對喜愛茂靈的大家（？）等等
+
+
+                </label>
+
+                <small id="Static780521456" class="ff-help-empty ff-help form-text mdViewer"></small>
+
+
+
+
+
+                <textarea class="ff-widget-control rest-form-control" id="Widget780521456" name="entry.189841679"
+                  placeholder="" rows="3"></textarea>
+
+
+                <div id="Error780521456" class="ff-widget-error"></div>
+              </div>
+
+            
+
+                </div>
+
+                <div class="ff-button-bar">
+
+                  <button type="button" class="rest-btn rest-btn-lg rest-btn-secondary ff-back" id="ff-back-1194002809"
+                    onclick="gotoSection(this.form, '1194002809', 'back')">
+                    <!-- arrow back SVG -->
+                    <img src="./data/icon/left.svg" class="material-icons">
+                    <span>Back</span>
+                  </button>
+
+                  <button type="button" class="rest-btn rest-btn-lg rest-btn-primary ff-submit"
+                    id="ff-submit-1194002809" onclick="submitForm(this.form, '1194002809')">
+
+                    <img src="./data/icon/send.svg" class="ff-submit-icon">
+
+                    <span>
+                      提交表單！
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+
+              
+
+            </form>
+            <div class="ff-section" id="ff-sec-ending" style="display:none">
+              <h4 class="ff-section-header" >
+                茂靈婚禮茶會內部合作人員
+              </h4>
+              <br>
+              <p style="padding-bottom:80px; margin-top: 3em;">建議也下載一份預購明細，方便之後查找核對喔。<br><br>感謝您的填寫！</p>
+              <button type="button" class="rest-btn rest-btn-lg rest-btn-primary ff-submit"
+              id="download-report">
+              <span>
+                下載明細
+              </span>
+            </button>
+
+            </div>
+
+            <div id="ff-addprd-overlay" onclick="closePopup()"></div>
+ 
+              <div id="ff-addprd-popup">
+                
+              </div>
+     
+
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="js/send_emails.js"></script>
+
+    <!-- <button id="test-report">12s</button> -->
+    <!-- <button id="test-getFormdata" onclick="getData()">GET Data</button> -->
+    <footer class="footer">
+      <div class="column">
+        <p class="svg-logo-container">
+          <img id="logoforuse" src="./data/logo/logo_colourful_mr_wedding.svg" style="transform: scale(3);"
+          class="logofooter">
+        </p>
+        <p class="text-sm">
+          <!-- <span>This site belongs to staff mobrei.</span> -->
+        </p>
+        <p class="copyright">
+          © 2023. All Rights Reserved.
+        </p>
+      </div>
+
+    </footer>
+
+  </div>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> -->
+  <script defer type="text/javascript" src="./js/pdfmake/pdfmake.min.js" type="text/javascript"></script>
+  <script defer type="text/javascript" src="./js/pdfmake/vfs_fonts.js" type="text/javascript"></script> 
+  <script defer
+  data-main="js/tailwind.js" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" ></script>
+
+  <script defer src="js/jquery-2.1.4.min.js"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script defer src="js/scripts.js"></script>
+  <script defer src="https://apis.google.com/js/api.js"></script>
+
+
+
+
+
+
+  <pb-pia-extension-container><pb-notification-frame-container
+      class="pb-notification-frame-container out"></pb-notification-frame-container><pb-sidebar-frame-container
+      class="pb-sidebar-frame-container out"></pb-sidebar-frame-container></pb-pia-extension-container>
+  <div id="ff-style-header">
+
+
+    <style>
+      /* 
+    For neartail it is 3 col and for formfacade it is 2 col.
+  */
+
+      .ff-layout-2column .ff-secfields {
+        grid-template-columns: repeat(auto-fill, minmax(min(30vw, 180px), 1fr)) !important;
+        grid-auto-flow: row;
+      }
+
+
+      .ff-form,
+      .ff-form div,
+      .ff-form p,
+      #ff-addprd-popup {
+        font-size: 14px !important;
+      }
+
+      :root {
+        --ff-fs: 14px !important;
+        
+        --theme-wedding-brown: #dccfc7;
+        --theme-wedding-blue: #ccdde4;
+        --theme-wedding-light: #fffbf0;
+        --theme-wedding-red: #c66960;
+        --theme-wedding-dark: #4f4a53;
+        --theme-wedding-gray: #616676;
+
+        --theme-wedding-darkred: rgb(183, 69, 59);
+
+
+
+        --ff-scale: 0.9;
+        --ff-primary-color: var(--theme-wedding-darkred);
+
+
+        --ff-primary-10: #f4dcd9;
+
+        --ff-primary-50: #f4bdb8;
+
+        --ff-primary-100: rgba(198, 105, 96, 0.1);
+
+        --ff-primary-200: rgba(198, 105, 96, 0.2);
+
+        --ff-primary-300: rgba(198, 105, 96, 0.3);
+
+        --ff-primary-400: rgba(198, 105, 96, 0.4);
+
+        --ff-primary-500: rgba(198, 105, 96, 0.5);
+
+        --ff-primary-600: rgba(198, 105, 96, 0.6);
+
+        --ff-primary-700: rgba(198, 105, 96, 0.75);
+
+        --ff-primary-800: rgba(198, 105, 96, 0.7);
+
+        --ff-primary-900: rgba(198, 105, 96, 0.8);
+
+        --ff-primary-950: rgba(198, 105, 96, 0.9);
+ 
+        --ff-primary-light: rgb(198, 105, 96, 0.4);
+
+        
+        --ff-bgcolor: #fff;
+        --ff-font-color: var(--theme-wedding-dark);
+        --ff-gray-900: var(--theme-wedding-gray);
+
+        --ff-font-size-0: max(calc(var(--font-size-0)*var(--ff-scale)), 12.6px);
+
+        --ff-font-size-1: max(calc(var(--font-size-1)*var(--ff-scale)), 14px);
+
+        --ff-font-size-2: max(calc(var(--font-size-2)*var(--ff-scale)), 15.4px);
+
+        --ff-font-size-3: max(calc(var(--font-size-3)*var(--ff-scale)), 17.5px);
+
+        --ff-font-size-4: max(calc(var(--font-size-4)*var(--ff-scale)), 21px);
+
+        --ff-font-size-5: max(calc(var(--font-size-5)*var(--ff-scale)), 28px);
+
+        --ff-font-size-6: max(calc(var(--font-size-6)*var(--ff-scale)), 35px);
+
+        --ff-font-size-7: max(calc(var(--font-size-7)*var(--ff-scale)), 42px);
+
+        --ff-font-size-8: max(calc(var(--font-size-8)*var(--ff-scale)), 49px);
+
+        --ff-font-size-00: max(calc(var(--font-size-00)*var(--ff-scale)), 11.2px);
+
+
+        --ff-size-1: max(calc(var(--size-1)*var(--ff-scale)), 3.5px);
+
+        --ff-size-2: max(calc(var(--size-2)*var(--ff-scale)), 7px);
+
+        --ff-size-3: max(calc(var(--size-3)*var(--ff-scale)), 14px);
+
+        --ff-size-4: max(calc(var(--size-4)*var(--ff-scale)), 17.5px);
+
+        --ff-size-5: max(calc(var(--size-5)*var(--ff-scale)), 21px);
+
+        --ff-size-6: max(calc(var(--size-6)*var(--ff-scale)), 24.5px);
+
+        --ff-size-7: max(calc(var(--size-7)*var(--ff-scale)), 28px);
+
+        --ff-size-8: max(calc(var(--size-8)*var(--ff-scale)), 42px);
+
+        --ff-size-9: max(calc(var(--size-9)*var(--ff-scale)), 56px);
+
+        --ff-size-10: max(calc(var(--size-10)*var(--ff-scale)), 70px);
+
+        --ff-size-11: max(calc(var(--size-11)*var(--ff-scale)), 105px);
+
+        --ff-size-12: max(calc(var(--size-12)*var(--ff-scale)), 140px);
+
+        --ff-size-13: max(calc(var(--size-13)*var(--ff-scale)), 210px);
+
+        --ff-size-14: max(calc(var(--size-14)*var(--ff-scale)), 280px);
+
+        --ff-size-15: max(calc(var(--size-15)*var(--ff-scale)), 420px);
+
+        --ff-size-000: max(calc(var(--size-000)*var(--ff-scale)), -7px);
+
+        --ff-size-00: max(calc(var(--size-00)*var(--ff-scale)), -3.5px);
+
+        --ff-font-size: var(--ff-font-size-1);
+        --ff-head-size: var(--ff-font-size-5);
+        --ff-font-small: var(--ff-font-size-0);
+        /* --ff-font-weight: 150 !important; */
+        --ff-field-bgcolor: #fff;
+        --ff-heading-font: 'LiSong Pro Light','Baskerville', 'Georgia', 'Nimbus Roman No9 L', 'Songti SC', 'STSong', 'AR PL New Sung', 'AR PL SungtiL GB', 'NSimSun', 'SimSun', 'TW\-Sung',
+  'WenQuanYi Bitmap Song', 'AR PL UMing CN', 'AR PL UMing HK', 'AR PL UMing TW', 'AR PL UMing TW MBE', 'PMingLiU', 'MingLiU', 'serif';
+        --ff-paragraph-font: "Work Sans";
+      }
+
+      .ff-public-mode .ff-editwidget {
+        display: none !important;
+      }
+
+      .ff-public-mode .ff-edittheme {
+        display: none !important;
+      }
+
+      .ff-public-mode .ff-editsection {
+        display: none !important;
+      }
+    </style>
+
+  </div>
+</body>
+
+</html>
